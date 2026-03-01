@@ -1,9 +1,11 @@
 variable "project" {
     type = string
+    default = {}
 }
 
 variable "environment" {
     type = string
+    default = {}
 }
 
 variable "cidr_block" {
@@ -22,6 +24,7 @@ variable "igw_tags" {
 
 variable "public_subnet_cidrs" {
     type = list(string)
+    default = {}
 }
 
 variable "public_subnet_tags" {
@@ -31,6 +34,7 @@ variable "public_subnet_tags" {
 
 variable "private_subnet_cidrs" {
     type = list(string)
+    default = {}
 }
 
 variable "private_subnet_tags" {
@@ -40,6 +44,7 @@ variable "private_subnet_tags" {
 
 variable "database_subnet_cidrs" {
     type = list(string)
+    default = {}
 }
 
 variable "database_subnet_tags" {
